@@ -55,15 +55,20 @@ y = random.choice(complist)
 
 if x == "Rock" and y == "Scissors": 
     print ("You Win! Computer chose " + y)
-if x == "Paper" and y == "Rock": 
-    print ("You Win! Computer chose " + y)
+    if x == "Paper" and y == "Rock": 
+       print ("You Win! Computer chose " + y)
     if x == "Scissors" and y == "Paper": 
-        print ("You Win! Computer chose " + y)
+          print ("You Win! Computer chose " + y)
     elif x == y: 
         print ("You both Draw! Computer chose " + y)
-    else: 
-        print ("You Lose! Computer chose " + y)       # this is my first attempt, I will keep this 
+else: 
+    print ("You Lose! Computer chose " + y)       # this is my first attempt, I will keep this 
 # here for visibility even if this is completely wrong. to get to this point
 # I scrolled to the if else portion of w3 schools and noticed 
 
 # i realized the first time all of this wasn't working as I was missing the ":" that should go after the if and other statements. 
+        
+# this is very interesting, so I had a few things I had to de bug with the logic above, first
+# I missed the == to the and if statement, secondly I think I was using the else statement wrong
+    # after the elif, as It was printing the outcome of the game and then printing line 65 too
+    # always, which obs shouldn't of been happening. 

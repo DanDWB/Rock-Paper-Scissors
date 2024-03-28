@@ -16,11 +16,22 @@
 
 
 # 1) Take a users input, and store this as x, values can only be rock, paper, or scissors
+
 # 2) computer chooses random string between three options (Scissors, Rock, Paper) and stores as y
-# 3) Now I need a loop, to check results, so:
-# If x == y then print "you draw, you and the computer chose x"
-# else x 
 
-# or
+# 3) Now here's the fun bit I need to build
 
-# 3) If     - so this is where I need to collect my thoughts for logic 
+# If x = rock and y = scissors
+# or if x = paper and y = rock
+# or if x = scissors and y = paper
+
+# print you win! Computer chose y
+
+# else if x == y then print, you draw, computer also chose y
+
+# else print, you lose, computer chose y
+
+# Give user option to replay 
+
+
+

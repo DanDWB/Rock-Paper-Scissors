@@ -1,3 +1,4 @@
+import random # had to import this to get the random choice selector
 # PLANNING
 
 # To start this project I need to have a game idea/function planned: rock, paper, scissors
@@ -25,7 +26,7 @@
 # or if x = paper and y = rock
 # or if x = scissors and y = paper
 
-# print you win! Computer chose y
+# then print you win! Computer chose y
 
 # else if x == y then print, you draw, computer also chose y
 
@@ -33,5 +34,21 @@
 
 # Give user option to replay 
 
+# THE PROGRAM 
+
+x = input("Which one do you choose? Rock, Paper, or Scissors? ") # for this, I literally didn't search anything, I knew I wanted
+# user input, so I went down to the python user input section on w3 schools, but now, I want 
+# AFTER THIS I WANT THE USER TO ONLY BE ABLE TO CHOOSE ONE OF THE THREE, i DON'T WANT PROGRAM STORING EVERYTHING
+# I just scrolled passed the check string function in python, maybe i will return and try that for line 40 comment
 
 
+# I struggled to find this just by scrolling through w3 school, so typed this into google:
+# how to get the computer to choose a random string in python, coincidence the first choice
+# was a w3 schools article showing the python random choice method
+
+complist = ["Rock", "Paper", "Scissors"] 
+
+y = random.choice(complist)
+
+# before continuing, I tested the output to makesure this worked, breaking up the program further
+# It's way easier to debug in steps.

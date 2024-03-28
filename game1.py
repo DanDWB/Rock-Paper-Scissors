@@ -53,13 +53,13 @@ y = random.choice(complist)
 # before continuing, I tested the output to makesure this worked, breaking up the program further
 # It's way easier to debug in steps.
 
-if x == "Rock" and y == "Scissors": 
+if x.casefold() == "rock" and y == "Scissors": 
     print ("You Win! Computer chose " + y)
-    if x == "Paper" and y == "Rock": 
+    if x.casefold() == "paper" and y == "Rock":
        print ("You Win! Computer chose " + y)
-    if x == "Scissors" and y == "Paper": 
+    if x.casefold() == "scissors" and y == "Paper": 
           print ("You Win! Computer chose " + y)
-    elif x == y: 
+elif x.casefold() == y.casefold(): 
         print ("You both Draw! Computer chose " + y)
 else: 
     print ("You Lose! Computer chose " + y)       # this is my first attempt, I will keep this 

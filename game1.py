@@ -52,3 +52,13 @@ y = random.choice(complist)
 
 # before continuing, I tested the output to makesure this worked, breaking up the program further
 # It's way easier to debug in steps.
+
+if x = "Rock" and y = "Scissors" print ("You Win! Computer chose " + y)
+  if x = "Paper" and y = "Rock" print ("You Win! Computer chose " + y)
+    if x = "Scissors" and y = "Paper" print ("You Win! Computer chose " + y)
+    elif x == y print ("You both Draw! Computer chose " + y)
+    else print ("You Lose! Computer chose " + y)       # this is my first attempt, I will keep this 
+# here for visibility even if this is completely wrong. to get to this point
+# I scrolled to the if else portion of w3 schools and noticed 
+
+# i realized the first time all of this wasn't working as I was missing the ":" that should go after the if and other statements. 

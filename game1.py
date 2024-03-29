@@ -59,16 +59,15 @@ if x.casefold() == "rock" and y == "Scissors":
        print ("You Win! Computer chose " + y)
     if x.casefold() == "scissors" and y == "Paper": 
           print ("You Win! Computer chose " + y)
-elif x.casefold() == y.casefold(): 
+elif x.casefold() == y.casefold(): # Here I fixed the issues with capital letters by typing on google: "how to remove capital sensitive in python strings", leading me to the .casefold() function on stack overflow
         print ("You both Draw! Computer chose " + y)
 else: 
-    print ("You Lose! Computer chose " + y)       # this is my first attempt, I will keep this 
-# here for visibility even if this is completely wrong. to get to this point
-# I scrolled to the if else portion of w3 schools and noticed 
+    print ("You Lose! Computer chose " + y)    
+# I scrolled to the if else portion of w3 schools and noticed nested if and elif statements, exactly what i needed
 
 # i realized the first time all of this wasn't working as I was missing the ":" that should go after the if and other statements. 
         
 # this is very interesting, so I had a few things I had to de bug with the logic above, first
 # I missed the == to the and if statement, secondly I think I was using the else statement wrong
     # after the elif, as It was printing the outcome of the game and then printing line 65 too
-    # always, which obs shouldn't of been happening. 
+    # always, which obs shouldn't of been happening. I put the 72 issue down to indentation

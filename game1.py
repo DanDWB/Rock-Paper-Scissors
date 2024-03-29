@@ -55,7 +55,7 @@ y = random.choice(complist)
 
 if x.casefold() == "rock" and y == "Scissors": 
     print ("You Win! Computer chose " + y)
-    if x.casefold() == "paper" and y == "Rock":
+if x.casefold() == "paper" and y == "Rock": # same issue as line 60 now, it's not letting me win
        print ("You Win! Computer chose " + y)
 elif x.casefold() == "scissors" and y == "Paper": # for some reason the game was working until I selected scissors and y = paper, it said I lost, so this line needs work (SOLVED: instead of if, i did another elif, and indented it as shown, python is indentation sensitive)
         print ("You Win! Computer chose " + y)

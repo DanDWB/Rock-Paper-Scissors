@@ -20,19 +20,19 @@ import random # had to import this to get the random choice selector
 
 # 2) computer chooses random string between three options (Scissors, Rock, Paper) and stores as y
 
-# 3) Now here's the fun bit I need to build
+# 3) Now here's the fun part, in my optinion. I need to build the logic behind the program.
 
-# If x = rock and y = scissors
+# So: If x = rock and y = scissors
 # or if x = paper and y = rock
 # or if x = scissors and y = paper
 
-# then print you win! Computer chose y
+# then print/computer says: "You win! Computer chose y"
 
-# else if x == y then print, you draw, computer also chose y
+# else if x == y then print: "You draw, computer also chose y"
 
-# else print, you lose, computer chose y
+# else print: "You lose, computer chose y"
 
-# Give user option to replay 
+# Give user option to replay - As of writing the blog, this hasn't been done just yet
 
 # THE PROGRAM 
 

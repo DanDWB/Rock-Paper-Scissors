@@ -42,7 +42,7 @@ x = input("Which one do you choose? Rock, Paper, or Scissors? ") # for this, I l
 # I just scrolled passed the check string function in python, maybe i will return and try that for line 41 comment
 
 
-# I struggled to find the next part scrolling through w3 school, so typed this into google:
+# I struggled to find the next part (making the computer select a random choice) scrolling through w3 school, so typed this into google:
 # "how to get the computer to choose a random string in python", coincidence the first choice
 # was a w3 schools article showing the python random choice method
 
@@ -53,21 +53,16 @@ y = random.choice(complist)
 # before continuing, I tested the output to makesure this worked, breaking up the program further. You can do this by just using the print function, e.g, print y, and ensure It's different/randomised. 
 # It's way easier to debug in steps.
 
-if x.casefold() == "rock" and y == "Scissors": 
+if x.casefold() == "rock" and y == "Scissors": # I scrolled to the if else portion of w3 schools and noticed nested if and elif statements, exactly what i needed for this section of my program
     print ("You Win! Computer chose " + y)
-if x.casefold() == "paper" and y == "Rock": # same issue as line 60 now, it's not letting me win (SOLVED: I hadn't indented it properly and it was missing this if statement and going to others, so I knocked it back a space and it works)
+if x.casefold() == "paper" and y == "Rock": 
        print ("You Win! Computer chose " + y)
-elif x.casefold() == "scissors" and y == "Paper": # for some reason the game was working until I selected scissors and y = paper, it said I lost, so this line needs work (SOLVED: instead of if, i did another elif, and indented it as shown, python is indentation sensitive)
-        print ("You Win! Computer chose " + y)
+elif x.casefold() == "scissors" and y == "Paper": 
 elif x.casefold() == y.casefold(): # Here I fixed the issues with capital letters by typing on google: "how to remove capital sensitive in python strings", leading me to the .casefold() function on stack overflow
         print ("You both Draw! Computer chose " + y)
 else: 
     print ("You Lose! Computer chose " + y)    
-# I scrolled to the if else portion of w3 schools and noticed nested if and elif statements, exactly what i needed
 
-# i realized the first time all of this wasn't working as I was missing the ":" that should go after the if and other statements. 
-        
-# this is very interesting, so I had a few things I had to de bug with the logic above, first
-# I missed the == to the and if statement, secondly I think I was using the else statement wrong
-    # after the elif, as It was printing the outcome of the game and then printing line 65 too
-    # always, which obs shouldn't of been happening. I put the 72 issue down to indentation
+# FIRST BUGS ENCOUNTERED: 1) I had issues with capital letters, i.e when a user typed 'rock' and not 'Rock', the computer wouln't register that as an answer (fixed with .casefold()).
+    # 2) I missed the "=="" + ":" to the and if statement. Example: if x.casefold() == "rock" **and** y =(=) "Scissors"(:) - I missed the == + :, after the and, I noticed this fairly quickly.
+    # 3) My If, else statements weren't indented correctly initially, which made the computer skip some of the statements/code. Solved by playing around with the indentations. 

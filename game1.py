@@ -36,6 +36,7 @@ import random # had to import this to get the random choice selector
 
 # THE PROGRAM 
 
+
 x = input("Which one do you choose? Rock, Paper, or Scissors? ") # for this, I literally didn't search anything, I knew I wanted
 # user input, so I scrolled down to the python user input section on w3 schools.
 # AFTER THIS I WANT THE USER TO ONLY BE ABLE TO CHOOSE ONE OF THE THREE, i DON'T WANT PROGRAM STORING EVERYTHING - I still need to add this
@@ -53,15 +54,17 @@ y = random.choice(complist)
 # before continuing, I tested the output to makesure this worked, breaking up the program further. You can do this by just using the print function, e.g, print y, and ensure It's different/randomised. 
 # It's way easier to debug in steps.
 
-if x.casefold() == "rock" and y == "Scissors": # I scrolled to the if else portion of w3 schools and noticed nested if and elif statements, exactly what i needed for this section of my program
+if x.casefold() == "rock" and y == "Scissors": 
     print ("You Win! Computer chose " + y)
-if x.casefold() == "paper" and y == "Rock": 
-       print ("You Win! Computer chose " + y)
-elif x.casefold() == "scissors" and y == "Paper": 
+elif x.casefold() == "paper" and y == "Rock": # same issue as line 60 now, it's not letting me win
+    print ("You Win! Computer chose " + y)
+elif x.casefold() == "scissors" and y == "Paper": # for some reason the game was working until I selected scissors and y = paper, it said I lost, so this line needs work (SOLVED: instead of if, i did another elif, and indented it as shown, python is indentation sensitive)
+    print ("You Win! Computer chose " + y)
 elif x.casefold() == y.casefold(): # Here I fixed the issues with capital letters by typing on google: "how to remove capital sensitive in python strings", leading me to the .casefold() function on stack overflow
-        print ("You both Draw! Computer chose " + y)
+    print ("You both Draw! Computer chose " + y)
 else: 
     print ("You Lose! Computer chose " + y)    
+
 
 # FIRST BUGS ENCOUNTERED: 1) I had issues with capital letters, i.e when a user typed 'rock' and not 'Rock', the computer wouln't register that as an answer (fixed with .casefold()).
     # 2) I missed the "=="" + ":" to the and if statement. Example: if x.casefold() == "rock" **and** y =(=) "Scissors"(:) - I missed the == + :, after the and, I noticed this fairly quickly.

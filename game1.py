@@ -36,7 +36,6 @@ import random # had to import this to get the random choice selector
 
 # THE PROGRAM 
 
-
 x = input("Which one do you choose? Rock, Paper, or Scissors? ") # for this, I literally didn't search anything, I knew I wanted
 # user input, so I scrolled down to the python user input section on w3 schools.
 # AFTER THIS I WANT THE USER TO ONLY BE ABLE TO CHOOSE ONE OF THE THREE, i DON'T WANT PROGRAM STORING EVERYTHING - I still need to add this
@@ -64,6 +63,7 @@ elif x.casefold() == y.casefold(): # Here I fixed the issues with capital letter
     print ("You both Draw! Computer chose " + y)
 else: 
     print ("You Lose! Computer chose " + y)    
+
 
 
 # FIRST BUGS ENCOUNTERED: 1) I had issues with capital letters, i.e when a user typed 'rock' and not 'Rock', the computer wouln't register that as an answer (fixed with .casefold()).
